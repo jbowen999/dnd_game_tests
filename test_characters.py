@@ -1,0 +1,111 @@
+julian = {
+    "name": "Julian",
+    "race": "Human",
+    "class": "Wizard",
+    "level": 5,
+    "background": "Sage",
+    "alignment": "Neutral Good",
+    "experience_points": 6500,
+    "hit_points": 30,
+    "armor_class": 12,
+    "speed": 30,
+    "proficiencies": ["Arcana", "History", "Insight", "Investigation"],
+    "languages": ["Common", "Elvish", "Draconic"],
+    "equipment": {
+        "weapons": ["Quarterstaff", "Dagger"],
+        "armor": ["None"],
+        "gear": ["Spellbook", "Component Pouch", "Scholar's Pack"],
+    },
+    "stats": {
+        "strength": 8,
+        "dexterity": 14,
+        "constitution": 12,
+        "intelligence": 18,
+        "wisdom": 15,
+        "charisma": 10,
+    },
+    "spells": {
+        "cantrips": ["Fire Bolt", "Mage Hand", "Prestidigitation"],
+        "level_1": ["Magic Missile", "Shield", "Identify"],
+        "level_2": ["Misty Step", "Mirror Image"],
+        "level_3": ["Fireball", "Counterspell"],
+    },
+    "features_and_traits": {
+        "arcane_recovery": "Once per day during a short rest, recover spell slots of combined level equal to half wizard level (rounded up).",
+        "spellcasting": "Ability to cast wizard spells using Intelligence as the spellcasting ability.",
+    },
+}
+
+
+mat = {
+    "name": "Mat",
+    "race": "Half-Elf",
+    "class": "Rogue",
+    "level": 5,
+    "background": "Criminal",
+    "alignment": "Chaotic Neutral",
+    "experience_points": 6500,
+    "hit_points": 38,
+    "armor_class": 14,
+    "speed": 30,
+    "proficiencies": ["Acrobatics", "Deception", "Insight", "Perception", "Stealth"],
+    "languages": ["Common", "Elvish", "Thieves' Cant"],
+    "equipment": {
+        "weapons": ["Rapier", "Dagger", "Shortbow"],
+        "armor": ["Leather Armor"],
+        "gear": ["Thieves' Tools", "Dungeoneer's Pack"],
+    },
+    "stats": {
+        "strength": 12,
+        "dexterity": 18,
+        "constitution": 14,
+        "intelligence": 12,
+        "wisdom": 13,
+        "charisma": 16,
+    },
+    "features_and_traits": {
+        "sneak_attack": "Once per turn, deal extra 3d6 damage to one creature you hit with an attack if you have advantage on the attack roll.",
+        "cunning_action": "Use a bonus action to Dash, Disengage, or Hide.",
+        "expertise": "Choose two skill proficiencies; your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
+    },
+}
+
+
+q = {
+    "name": "Q",
+    "race": "Dwarf",
+    "class": "Cleric",
+    "level": 5,
+    "background": "Acolyte",
+    "alignment": "Lawful Good",
+    "experience_points": 6500,
+    "hit_points": 42,
+    "armor_class": 18,
+    "speed": 25,
+    "proficiencies": ["Medicine", "Religion", "History", "Insight"],
+    "languages": ["Common", "Dwarvish", "Celestial"],
+    "equipment": {
+        "weapons": ["Warhammer", "Light Crossbow"],
+        "armor": ["Chain Mail", "Shield"],
+        "gear": ["Holy Symbol", "Priest's Pack"],
+    },
+    "stats": {
+        "strength": 16,
+        "dexterity": 10,
+        "constitution": 16,
+        "intelligence": 12,
+        "wisdom": 18,
+        "charisma": 14,
+    },
+    "spells": {
+        "cantrips": ["Sacred Flame", "Thaumaturgy", "Spare the Dying"],
+        "level_1": ["Bless", "Cure Wounds", "Shield of Faith"],
+        "level_2": ["Hold Person", "Lesser Restoration"],
+        "level_3": ["Revivify", "Spirit Guardians"],
+    },
+    "features_and_traits": {
+        "divine_domain": "Life Domain",
+        "channel_divinity": "Preserve Life: As an action, restore HP up to 5 times cleric level to any creatures within 30 feet.",
+        "disciple_of_life": "When you cast a healing spell of 1st level or higher, the creature regains additional HP equal to 2 + the spell's level.",
+    },
+}
