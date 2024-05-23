@@ -1,6 +1,6 @@
-from dnd_game_tests.test_characters import *
+from test_characters import *
 from test_enemies import *
-import random
+import rolls
 
 
 # COMBAT TEST ///////////////////////
@@ -23,18 +23,6 @@ def cal_proficiency(level):
         return 2
 
 
-def roll_d_20():
-    roll = random.randint(1, 20)
-    print(roll)
-    return roll
-
-
-def roll_d_8():
-    roll = random.randint(1, 8)
-    print(roll)
-    return roll
-
-
 def calculate_hit(ac, str, roll, prof):
     attack = str + roll + prof
     if attack > ac:
@@ -44,15 +32,33 @@ def calculate_hit(ac, str, roll, prof):
 
 
 def attack(attacker, defender):
-    attacker_strength = attacker["stats"]["strength"]
-    defender_a_c = defender["armor_class"]
-    strength_mod = calc_modifier(attacker_strength)
+    attacker_stat = attacker["attack_stat"]
+    mod_stat = attacker["stats"][attacker_stat]
+    modifier = calc_modifier(mod_stat)
     proficiency_mod = cal_proficiency(attacker["level"])
-    attack_roll = roll_d_20()
-    if calculate_hit(defender_a_c, strength_mod, attack_roll, proficiency_mod):
-        return roll_d_8() + int(strength_mod)
+    weapon = attacker["equipment"]["weapon"]
+    print(weapon)
+    defender_a_c = defender["armor_class"]
+    attack_roll = rolls.roll_d_20()
+    if calculate_hit(defender_a_c, modifier, attack_roll, proficiency_mod):
+        damage_roll = rolls.roll_d_8()
+        damage = damage_roll + int(modifier)
+        print(f"Damage Roll: {damage_roll}")
+        return f"You deal {damage} damage to {defender['name']}"
     else:
         return "Miss"
 
 
 print(f">> {attack(mat, goblin)}")
+
+
+def use_item():
+    return None
+
+
+def initiative_roll(party, enemies):
+    return None
+
+
+def lose_hp(current_hp, damage):
+    return None

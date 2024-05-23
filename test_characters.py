@@ -47,11 +47,12 @@ mat = {
     "experience_points": 6500,
     "hit_points": 38,
     "armor_class": 14,
+    "attack_stat": "dexterity",
     "speed": 30,
     "proficiencies": ["Acrobatics", "Deception", "Insight", "Perception", "Stealth"],
     "languages": ["Common", "Elvish", "Thieves' Cant"],
     "equipment": {
-        "weapons": ["Rapier", "Dagger", "Shortbow"],
+        "weapon": {"rapier": 8},
         "armor": ["Leather Armor"],
         "gear": ["Thieves' Tools", "Dungeoneer's Pack"],
     },
