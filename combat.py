@@ -49,7 +49,7 @@ def attack(attacker, defender):
         return "Miss"
 
 
-print(f">> {attack(mat, goblin)}")
+# print(f">> {attack(mat, goblin)}")
 
 
 def use_item():
